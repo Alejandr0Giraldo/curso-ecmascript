@@ -16,14 +16,57 @@
 
 // constructor
 
+// class user {
+//     //Constructor
+//     constructor() {
+//         console.log('Nuevo Usuario')
+//     }
+//     greeting(){
+//         return'Hello'
+//     }
+// }
+//
+// const david = new user()
+
+// this
+// class user {
+//     constructor(name) {
+//         this.name = name
+//     }
+//     //metodos
+//     speak(){
+//         return 'Hello'
+//     }
+//     greeting(){
+//         return `${this.speak()} ${this.name}`
+//     }
+// }
+//
+// const ana = new user('Ana')
+// console.log(ana.greeting())
+
 class user {
-    //Constructor
-    constructor() {
-        console.log('Nuevo Usuario')
+    //constructor
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+    //metodos
+    speak(){
+        return 'Hello'
     }
     greeting(){
-        return'Hello'
+        return `${this.speak()} ${this.name()}`
+    }
+
+    get uAge(){
+        return this.age
+    }
+    set uAge (n){
+        this.age = n
     }
 }
 
-const david = new user()
+const bebeloper = new user('David', 15)
+console.log(bebeloper.uAge)
+console.log(bebeloper.uAge = 20)
