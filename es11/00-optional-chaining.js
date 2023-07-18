@@ -7,5 +7,5 @@ const users = {
     }
 }
 
-
+console.log(users.gndx)
 console.log(users?.bebeloper?.country)
