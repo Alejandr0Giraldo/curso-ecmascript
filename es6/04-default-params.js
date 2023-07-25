@@ -1,5 +1,5 @@
 function newUser(name, age, country) {
-    var name = name || 'Diego'
+var name = name || 'Diego'
     var age = age || 21
     var country = country || 'col'
     console.log(name,age,country)
